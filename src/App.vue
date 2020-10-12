@@ -13,7 +13,9 @@ import MainLayout from '@/layouts/MainLayout'
 export default {
   computed: {
     layout () {
-      return (this.$route.meta.layout || 'auth') + '-layout'
+      const layout = (this.$route.meta.layout || 'auth') + '-layout'
+      console.log(layout)
+      return layout
     }
   },
   components: {

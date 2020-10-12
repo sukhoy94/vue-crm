@@ -1,4 +1,5 @@
 <template>
+  <div>
   <form class="card auth-card">
     <div class="card-content">
       <span class="card-title">Домашняя бухгалтерия</span>
@@ -38,11 +39,12 @@
       </p>
     </div>
   </form>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "Login"
+  name: 'Login'
 }
 </script>
 
