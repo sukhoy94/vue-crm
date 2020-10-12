@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Categories from '@/views/Categories'
 import Login from '@/views/Login'
+import History from '@/views/History'
 Vue.use(VueRouter)
 
 const routes = [
@@ -22,6 +23,12 @@ const routes = [
     name: 'categories',
     meta: { layout: 'main' },
     component: Categories
+  },
+  {
+    path: '/history',
+    name: 'history',
+    meta: { layout: 'main' },
+    component: History
   }
 ]
 
