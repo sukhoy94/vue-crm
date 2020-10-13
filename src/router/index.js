@@ -7,6 +7,7 @@ import History from '@/views/History'
 import DetailRecord from '@/views/DetailRecord'
 import Register from '@/views/Register'
 import Record from '@/views/Record'
+import Profile from '@/views/Profile'
 
 Vue.use(VueRouter)
 
@@ -52,6 +53,12 @@ const routes = [
     name: 'record',
     meta: { layout: 'main' },
     component: Record
+  },
+  {
+    path: '/profile',
+    name: 'profile',
+    meta: { layout: 'main' },
+    component: Profile
   }
 ]
 
