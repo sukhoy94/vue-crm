@@ -6,6 +6,7 @@ import Login from '@/views/Login'
 import History from '@/views/History'
 import DetailRecord from '@/views/DetailRecord'
 import Register from '@/views/Register'
+import Record from '@/views/Record'
 
 Vue.use(VueRouter)
 
@@ -45,6 +46,12 @@ const routes = [
     name: 'register',
     meta: { layout: 'auth' },
     component: Register
+  },
+  {
+    path: '/record',
+    name: 'record',
+    meta: { layout: 'main' },
+    component: Record
   }
 ]
 
