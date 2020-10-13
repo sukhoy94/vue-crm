@@ -4,6 +4,8 @@ import Home from '../views/Home.vue'
 import Categories from '@/views/Categories'
 import Login from '@/views/Login'
 import History from '@/views/History'
+import DetailRecord from '@/views/DetailRecord'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -30,6 +32,12 @@ const routes = [
     name: 'home',
     meta: { layout: 'main' },
     component: Home
+  },
+  {
+    path: '/detail-record',
+    name: 'detail-record',
+    meta: { layout: 'main' },
+    component: DetailRecord
   }
 ]
 
