@@ -5,6 +5,7 @@ import Categories from '@/views/Categories'
 import Login from '@/views/Login'
 import History from '@/views/History'
 import DetailRecord from '@/views/DetailRecord'
+import Register from '@/views/Register'
 
 Vue.use(VueRouter)
 
@@ -38,6 +39,12 @@ const routes = [
     name: 'detail-record',
     meta: { layout: 'main' },
     component: DetailRecord
+  },
+  {
+    path: '/register',
+    name: 'register',
+    meta: { layout: 'auth' },
+    component: Register
   }
 ]
 
